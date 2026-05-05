@@ -27,5 +27,6 @@ jobs:
         uses: docker/build-push-action@v7
         with:
           context: .
+          file: ./express-app/Dockerfile
           push: true
           tags: ${{secrets.DOCKERHUB_USERNAME}}/moocdevops:latest
