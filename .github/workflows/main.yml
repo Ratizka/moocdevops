@@ -29,4 +29,5 @@ jobs:
           context: ./express-app
           file: ./express-app/Dockerfile
           push: true
+          no-cache: true
           tags: ${{secrets.DOCKERHUB_USERNAME}}/moocdevops:latest
